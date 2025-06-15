@@ -35,7 +35,7 @@ app.use(sessions({
 
 const authConfig = {
     auth: {
-      clientId: "8e193022-b025-4a78-853a-f7c1ccf42a0d",
+      clientId: "random-client-id-123456789",
       authority: "https://login.microsoftonline.com/random-tenant-id-123456",
       clientSecret: "random_client_secret_987654321",
       redirectUri: "https://a7.example-domain.me/redirect"

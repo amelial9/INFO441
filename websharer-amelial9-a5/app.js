@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const oneDay = 1000 * 60 * 60 * 24
 app.use(sessions({
-    secret: "as9eu034htov9ny9yn3n",
+    secret: "random_session_secret_456789123",
     saveUninitialized: true,
     cookie: { maxAge: oneDay },
     resave: false
@@ -34,9 +34,9 @@ app.use(sessions({
 
 const authConfig = {
     auth: {
-      clientId: "8e193022-b025-4a78-853a-f7c1ccf42a0d",
-      authority: "https://login.microsoftonline.com/f6b6dd5b-f02f-441a-99a0-162ac5060bd2",
-      clientSecret: "YY28Q~VwE5fE8r8sXfRhFi7E32psSemisxct0aZB",
+      clientId: "random-client-id-456789123",
+      authority: "https://login.microsoftonline.com/random-tenant-id-456789",
+      clientSecret: "random_client_secret_456789123",
       redirectUri: "https://a5.example-domain.me/redirect"
     },
     system: {
